@@ -54,3 +54,27 @@ import Agent9 from './assets/img/agents/agent9.png';
 import Agent10 from './assets/img/agents/agent10.png';
 import Agent11 from './assets/img/agents/agent11.png';
 import Agent12 from './assets/img/agents/agent12.png';
+
+
+export const housesData = [
+  {
+    id: 1,
+    type: 'House',
+    name: 'House 1',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+    image: House1,
+    imageLg: House1Lg,
+    country: 'United States',
+    address: '7240C Argyle St. Lawndale, CA 90260',
+    bedrooms: '6',
+    bathrooms: '3',
+    surface: '4200 sq ft',
+    year: '2016',
+    price: '110000',
+    agent: {
+      image: Agent1,
+      name: 'Patricia Tullert',
+      phone: '0123 456 78910',
+    },
+  },
