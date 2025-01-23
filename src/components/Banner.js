@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react"
 
-function Banner() {
+// import image 
+import Image from "../assets/img/house-banner.png";
+
+// import components
+import Search from "../components/Search";
+
+const Banner = () => {
   return (
-    <div>Banner</div>
+    <section>
+      <div>
+        <div>
+          <h1><span>Rent</span>  Your Dream House With Us.</h1>
+        </div>
+      </div>
+    </section>
   )
-}
+};
 
 export default Banner
