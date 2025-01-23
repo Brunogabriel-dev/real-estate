@@ -11,7 +11,16 @@ const Banner = () => {
     <section>
       <div>
         <div>
-          <h1><span>Rent</span>  Your Dream House With Us.</h1>
+          <h1>
+            <span>Rent</span>  Your Dream House With Us.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Debitis
+            magnam est autem minus expedita accusantium
+            quam fugit distinctio
+            molestias incidunt!
+          </p>
         </div>
       </div>
     </section>
