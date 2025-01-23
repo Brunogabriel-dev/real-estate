@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react"
 
-function Header() {
-  return (
-    <div>Header</div>
-  )
+// import link 
+import {Link} from "react-router-dom";
+// import logo
+import Logo from "../assets/img/logo.svg";
+
+const Header = () => {
+  return <header>
+    <div className="container mx-auto">
+      {/* logo */}
+      <Link to="/"><img src="" alt="" /></Link>
+    </div>
+  </header>
+    
+  
 }
 
 export default Header
