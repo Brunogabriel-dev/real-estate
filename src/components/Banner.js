@@ -8,8 +8,8 @@ import Search from "../components/Search";
 
 const Banner = () => {
   return (
-    <section>
-      <div>
+    <section className="h-full max-h-[640px] mb-8 xl:mb-24">
+      <div className="flex flex-col lg:flex-row">
         <div>
           <h1>
             <span>Rent</span>  Your Dream House With Us.
@@ -22,9 +22,14 @@ const Banner = () => {
             molestias incidunt!
           </p>
         </div>
+        {/* image */}
+        <div>
+          <img src={Image} alt="" />
+        </div>
       </div>
+      <Search />
     </section>
-  )
+  );
 };
 
 export default Banner
