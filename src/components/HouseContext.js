@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState, createContext } from "react";
 
-function HouseContext() {
+
+const HouseContext = () => {
   return (
     <div>HouseContext</div>
   )
