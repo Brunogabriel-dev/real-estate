@@ -14,7 +14,7 @@ const Search = () => {
       <CountryDropdown />
       <PropertyDropdown />
       <PriceRangeDropdown />
-      <button>
+      <button className="bg-violet-700 hover:bg-violet-800 transition w-full lg:max-w-[162px]">
         <RiSearch2Line />
       </button>
     </div>
