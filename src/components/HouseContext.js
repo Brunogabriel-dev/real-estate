@@ -7,10 +7,12 @@ import { housesData } from "../data";
 export const HouseContext = createContext();
 
 
-const HouseContext = () => {
+const HouseContextProvider = ({children}) => {
   return (
-    <div>HouseContext</div>
-  )
+    <HouseContext.Provider value={console.log('this is the context')}>
+      {children}
+      </HouseContext.Provider>
+  );
 };
 
-export default HouseContext;
+export default HouseContextProvider;
