@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState, useEffect } from "react";
 
-function CountryDropdown() {
+// import icons
+import {} from 'react-icons/ri'
+
+const CountryDropdown = () => {
   return (
     <div>CountryDropdown</div>
   )
