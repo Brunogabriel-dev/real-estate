@@ -10,7 +10,9 @@ import { Menu } from "@headlessui/react";
 import { HouseContext } from "./HouseContext";
 
 const CountryDropdown = () => {
-  const {country, setCountry, countries} = useContext(HouseContext);
+  const { country, setCountry, countries } = useContext(HouseContext);
+
+  console.log(countries);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,6 +33,22 @@ const CountryDropdown = () => {
           <RiArrowDownSLine className="dropdown-icon-secondary" />
           )}
       </Menu.Button>
+
+      <Menu.Items className='dropdown-menu'>
+        {countries.map((country, index)=> {
+          return ( 
+             <Menu.Item
+             onClick={() => setCountry(country)} 
+               className='cursor-pointer
+               hover:text-violet-700 transition'
+               as='li' 
+               key={index}>
+               {country}
+            </Menu.Item>
+          );
+        })}
+      </Menu.Items>
+
       </Menu>
   );
 };
