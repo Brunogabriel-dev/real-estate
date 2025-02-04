@@ -15,8 +15,15 @@ const CountryDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Menu as='div' className='dropdown '>
-      CountryDropdown
+    <Menu as='div' className='dropdown ralative'>
+      <Menu.Button>
+      <RiMapPinLine 
+      className="dropdown-icon-primary"/>
+      <div>
+        <div>{country}</div>
+        <div>Select your place</div>
+      </div>
+      </Menu.Button>
       </Menu>
   );
 };
