@@ -16,13 +16,20 @@ const CountryDropdown = () => {
 
   return (
     <Menu as='div' className='dropdown ralative'>
-      <Menu.Button>
+      <Menu.Button onClick={()=> setIsOpen(!isOpen)} className='dropdown-btn w-full text-left'
+        >
       <RiMapPinLine 
       className="dropdown-icon-primary"/>
       <div>
-        <div>{country}</div>
-        <div>Select your place</div>
+        <div className="text-[15px] font-medium leading-tight">{country}</div>
+        <div className="text-[13px]">Select your 
+        place</div>
       </div>
+      {isOpen ? (
+          <RiArrowUpSLine className="dropdown-icon-secondary" /> 
+          ) : (
+          <RiArrowDownSLine className="dropdown-icon-secondary" />
+          )}
       </Menu.Button>
       </Menu>
   );
