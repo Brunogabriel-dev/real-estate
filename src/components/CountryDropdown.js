@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 
 // import icons
-import {} from 'react-icons/ri'
+import { RiMapPinLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri'
 
 const CountryDropdown = () => {
   return (
